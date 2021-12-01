@@ -8,7 +8,7 @@ const evenGame = () => {
   const getRandomInt = (min, max) => {
     const minNumber = Math.ceil(min);
     const maxNumber = Math.floor(max);
-    return Math.floor(Math.random() * (maxNumber - minNumber + 1));
+    return Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
   };
   for (let i = 1; i <= 3; i += 1) {
     const randomNumber = getRandomInt(1, 20);
@@ -18,7 +18,7 @@ const evenGame = () => {
       if (randomNumber % 2 === 0) {
         console.log('Correct!');
       } else {
-        console.log(`${playerAnswer} is wrong answer ;(. Correct answer was "yes".`);
+        console.log(`${playerAnswer} is wrong answer ;(. Correct answer was "no".`);
         console.log(`Let's try again, ${userName}!`);
         return;
       }
@@ -27,7 +27,7 @@ const evenGame = () => {
       if (randomNumber % 2 !== 0) {
         console.log('Correct!');
       } else {
-        console.log(`${playerAnswer} is wrong answer;(. Correct answer was "no".`);
+        console.log(`${playerAnswer} is wrong answer;(. Correct answer was "yes".`);
         console.log(`Let's try again, ${userName}!`);
         return;
       }
