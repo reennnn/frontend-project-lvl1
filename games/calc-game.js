@@ -3,7 +3,7 @@ import userName from '../src/cli.js';
 import { getRandomInt } from '../src/index.js';
 
 const calcGame = () => {
-  console.log(`Hello, ${userName}`);
+  console.log(`Hello, ${userName}!`);
   console.log('What is the result of the expression?');
   for (let i = 1; i <= 3; i += 1) {
     const firstNumber = getRandomInt(1, 99);
