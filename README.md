@@ -7,7 +7,7 @@ Brain Games - five console games based on principles of games for brain training
 
 How to install:
 1. Install the newest version of Node.js globally
-2. Copy repository
+2. Copy repository with 'git clone git@github.com:reennnn/frontend-project-lvl1'
 3. Install dependencies with 'make install'
 
 Commands for launch games:
