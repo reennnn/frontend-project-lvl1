@@ -1,6 +1,21 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/reennnn/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/reennnn/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+Brain Games:
+Brain Games - five console games based on principles of games for brain training. Each game asks questions that you should answer. After 3 correct answers the game is considered to be passed. Wrong answers ends game and suggest to start from beginning.
+
+How to install:
+1. Install the newest version of Node.js globally
+2. Copy repository
+3. Install dependencies with 'make install'
+
+Commands for launch games:
+1. brain-even
+2. brain-calc
+3. brain-gcd
+4. brian-progression
+5. brain-prime
+
 <a href="https://asciinema.org/a/SXSs8FPWn9VPdplWVfx3SZxcz" target="_blank"><img src="https://asciinema.org/a/SXSs8FPWn9VPdplWVfx3SZxcz.svg" /></a>
 <a href="https://asciinema.org/a/v4pzSTw4aKVBKsnqwwKLbwb0W" target="_blank"><img src="https://asciinema.org/a/v4pzSTw4aKVBKsnqwwKLbwb0W.svg" /></a>
 <a href="https://asciinema.org/a/lBbklrVeA3fw2zIGyl5tqUQj0" target="_blank"><img src="https://asciinema.org/a/lBbklrVeA3fw2zIGyl5tqUQj0.svg" /></a>
