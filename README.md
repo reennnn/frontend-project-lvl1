@@ -2,14 +2,15 @@
 [![Actions Status](https://github.com/reennnn/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/reennnn/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
-Brain Games: five console games based on principles of games for brain training. Each game asks questions that you should answer. After 3 correct answers the game is considered to be passed. Wrong answers ends game and suggest to start from beginning.
+### Brain Games: 
+Five console games based on principles of games for brain training. Each game asks questions that you should answer. After 3 correct answers the game is considered to be passed. Wrong answers ends game and suggest to start from beginning.
 
-How to install:
+### How to install:
 1. Install the newest version of Node.js globally
 2. Copy repository with 'git clone git@github.com:reennnn/frontend-project-lvl1'
 3. Install dependencies with 'make install'
 
-Commands for launch games:
+### Commands for launch games:
 1. brain-even
 2. brain-calc
 3. brain-gcd
