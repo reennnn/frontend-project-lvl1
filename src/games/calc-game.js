@@ -1,4 +1,4 @@
-import { getRandomInt, runGame } from '../src/index.js';
+import { getRandomInt, runGame } from '../index.js';
 
 const getCorrectAnswer = (x, operator, y) => {
   let result;
