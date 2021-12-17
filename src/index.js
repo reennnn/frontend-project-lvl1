@@ -8,8 +8,8 @@ const runGame = (startRound, task) => {
 
   for (let i = 1; i <= numberOfRounds; i += 1) {
     const answerAndQuestion = startRound();
-    const correctAnswer = answerAndQuestion[0].toString();
-    const question = answerAndQuestion[1];
+    const [answer, question] = answerAndQuestion;
+    const correctAnswer = answer.toString();
     console.log(question);
     const playerAnswer = readlineSync.question('Your answer: ');
     if (playerAnswer === correctAnswer) {
