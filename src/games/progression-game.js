@@ -1,4 +1,5 @@
-import { getRandomInt, runGame } from '../index.js';
+import getRandomInt from '../additional-functions.js';
+import runGame from '../index.js';
 
 const createProgression = (progressionLenght, progressionIncrease) => {
   const progressionArr = [];
@@ -9,7 +10,7 @@ const createProgression = (progressionLenght, progressionIncrease) => {
   return progressionArr;
 };
 
-const round = () => {
+const startRound = () => {
   const progressionLenght = getRandomInt(5, 10);
   const progressionIncrease = getRandomInt(1, 10);
   const randomElement = getRandomInt(0, progressionLenght - 1);
@@ -22,7 +23,7 @@ const round = () => {
 
 const progressionGame = () => {
   const task = 'What number is missing in the progression?';
-  runGame(round, task);
+  runGame(startRound, task);
 };
 
 export default progressionGame;

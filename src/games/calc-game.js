@@ -1,4 +1,5 @@
-import { getRandomInt, runGame } from '../index.js';
+import getRandomInt from '../additional-functions.js';
+import runGame from '../index.js';
 
 const getCorrectAnswer = (x, operator, y) => {
   let result;
@@ -19,7 +20,7 @@ const getCorrectAnswer = (x, operator, y) => {
   return result;
 };
 
-const round = () => {
+const startRound = () => {
   const firstNumber = getRandomInt(1, 99);
   const secondNumber = getRandomInt(1, 99);
   const operators = ['+', '-', '*'];
@@ -31,7 +32,7 @@ const round = () => {
 
 const calcGame = () => {
   const task = 'What is the result of the expression?';
-  runGame(round, task);
+  runGame(startRound, task);
 };
 
 export default calcGame;

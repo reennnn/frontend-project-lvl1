@@ -1,24 +1,18 @@
 import readlineSync from 'readline-sync';
-import userName from './cli.js';
+import { userName } from './additional-functions.js';
 
-export const getRandomInt = (min, max) => {
-  const minNumber = Math.ceil(min);
-  const maxNumber = Math.floor(max);
-  return Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-};
-
-export const runGame = (round, task) => {
+const runGame = (startRound, task) => {
   const numberOfRounds = 3;
   console.log(`Hello, ${userName}!`);
   console.log(task);
 
   for (let i = 1; i <= numberOfRounds; i += 1) {
-    const answerAndQuestion = round();
-    const correctAnswer = answerAndQuestion[0];
+    const answerAndQuestion = startRound();
+    const correctAnswer = answerAndQuestion[0].toString();
     const question = answerAndQuestion[1];
     console.log(question);
     const playerAnswer = readlineSync.question('Your answer: ');
-    if (playerAnswer === correctAnswer.toString()) {
+    if (playerAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
       console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
@@ -28,3 +22,5 @@ export const runGame = (round, task) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
+
+export default runGame;

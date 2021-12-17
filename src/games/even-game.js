@@ -1,7 +1,14 @@
-import { getRandomInt, runGame } from '../index.js';
+import getRandomInt from '../additional-functions.js';
+import runGame from '../index.js';
 
-const getCorrectAnswer = (number) => (number % 2 === 0 ? 'yes' : 'no');
-const round = () => {
+const checkForEven = (number) => {
+  if (number % 2 === 0) {
+    return true;
+  }
+  return false;
+};
+const getCorrectAnswer = (number) => (checkForEven(number) ? 'yes' : 'no');
+const startRound = () => {
   const randomNumber = getRandomInt(1, 99);
   const correctAnswer = getCorrectAnswer(randomNumber);
   const question = `Question: ${randomNumber}`;
@@ -10,6 +17,6 @@ const round = () => {
 
 const evenGame = () => {
   const task = 'Answer "yes" if the number is even. Otherwise answer "no".';
-  runGame(round, task);
+  runGame(startRound, task);
 };
 export default evenGame;
