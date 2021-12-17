@@ -26,7 +26,7 @@ const startRound = () => {
   const operators = ['+', '-', '*'];
   const randomOperator = operators[getRandomInt(0, operators.length - 1)];
   const correctAnswer = getCorrectAnswer(firstNumber, randomOperator, secondNumber);
-  const question = `Question: ${firstNumber} ${randomOperator} ${secondNumber}`;
+  const question = `${firstNumber} ${randomOperator} ${secondNumber}`;
   return [correctAnswer, question];
 };
 

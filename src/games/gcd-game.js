@@ -11,7 +11,7 @@ const getGcd = (firstNum, secondNum) => {
 const startRound = () => {
   const firstNum = getRandomInt(1, 99);
   const secondNum = getRandomInt(1, 99);
-  const question = `Question: ${firstNum} ${secondNum}`;
+  const question = `${firstNum} ${secondNum}`;
   return [getGcd(firstNum, secondNum), question];
 };
 

@@ -17,7 +17,7 @@ const startRound = () => {
   const progressionArray = createProgression(progressionLenght, progressionIncrease);
   const correctAnswer = progressionArray[randomElement];
   progressionArray[randomElement] = '..';
-  const question = `Question: ${progressionArray.join(' ')}`;
+  const question = progressionArray.join(' ');
   return [correctAnswer, question];
 };
 

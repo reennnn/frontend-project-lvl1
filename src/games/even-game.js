@@ -11,7 +11,7 @@ const getCorrectAnswer = (number) => (checkForEven(number) ? 'yes' : 'no');
 const startRound = () => {
   const randomNumber = getRandomInt(1, 99);
   const correctAnswer = getCorrectAnswer(randomNumber);
-  const question = `Question: ${randomNumber}`;
+  const question = randomNumber;
   return [correctAnswer, question];
 };
 

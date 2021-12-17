@@ -15,7 +15,7 @@ const checkForPrime = (randomNum) => {
 const getCorrectAnswer = (number) => (checkForPrime(number) ? 'yes' : 'no');
 const startRound = () => {
   const randomNumber = getRandomInt(1, 99);
-  const question = `Question: ${randomNumber}`;
+  const question = randomNumber;
   return [getCorrectAnswer(randomNumber), question];
 };
 const primeGame = () => {

@@ -10,7 +10,7 @@ const runGame = (startRound, task) => {
     const answerAndQuestion = startRound();
     const [answer, question] = answerAndQuestion;
     const correctAnswer = answer.toString();
-    console.log(question);
+    console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer: ');
     if (playerAnswer === correctAnswer) {
       console.log('Correct!');
