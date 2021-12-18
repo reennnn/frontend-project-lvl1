@@ -1,11 +1,11 @@
 import getRandomInt from '../additional-functions.js';
 import runGame from '../index.js';
 
-const createProgression = (progressionLenght, progressionIncrease) => {
+const createProgression = (firstElement, progressionLenght, progressionIncrease) => {
   const progressionArr = [];
-  let firstElement = getRandomInt(1, 10);
+  let firstNumber = firstElement;
   for (let x = 0; x < progressionLenght; x += 1) {
-    progressionArr.push(firstElement += progressionIncrease);
+    progressionArr.push(firstNumber += progressionIncrease);
   }
   return progressionArr;
 };
@@ -13,8 +13,9 @@ const createProgression = (progressionLenght, progressionIncrease) => {
 const startRound = () => {
   const progressionLenght = getRandomInt(5, 10);
   const progressionIncrease = getRandomInt(1, 10);
+  const firstElement = getRandomInt(1, 99);
   const randomElement = getRandomInt(0, progressionLenght - 1);
-  const progressionArray = createProgression(progressionLenght, progressionIncrease);
+  const progressionArray = createProgression(firstElement, progressionLenght, progressionIncrease);
   const correctAnswer = progressionArray[randomElement];
   progressionArray[randomElement] = '..';
   const question = progressionArray.join(' ');
