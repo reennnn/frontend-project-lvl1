@@ -20,7 +20,7 @@ const getCorrectAnswer = (x, operator, y) => {
   return result;
 };
 
-const startRound = () => {
+const prepareRoundData = () => {
   const firstNumber = getRandomInt(1, 99);
   const secondNumber = getRandomInt(1, 99);
   const operators = ['+', '-', '*'];
@@ -32,7 +32,7 @@ const startRound = () => {
 
 const calcGame = () => {
   const task = 'What is the result of the expression?';
-  runGame(startRound, task);
+  runGame(prepareRoundData, task);
 };
 
 export default calcGame;
