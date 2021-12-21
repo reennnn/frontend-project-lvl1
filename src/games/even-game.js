@@ -1,12 +1,7 @@
 import getRandomInt from '../additional-functions.js';
 import runGame from '../index.js';
 
-const isEven = (number) => {
-  if (number % 2 === 0) {
-    return true;
-  }
-  return false;
-};
+const isEven = (number) => number % 2 === 0;
 const getCorrectAnswer = (number) => (isEven(number) ? 'yes' : 'no');
 const prepareRoundData = () => {
   const randomNumber = getRandomInt(1, 99);
